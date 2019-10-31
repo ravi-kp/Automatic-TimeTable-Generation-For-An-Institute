@@ -1,0 +1,15 @@
+S1 Monday Tuesday Thursday 8:30 9:30 10:35
+S10 Tuesday Friday  2:00 2:00 
+S11 Tuesday Friday  3:30 3:30 
+S12 Monday Thursday  5:00 5:00 
+S13 Monday Thursday  6:30 6:30 
+S14 Tuesday Friday  5:00 5:00 
+S15 Tuesday Friday  6:30 6:30 
+S2 Monday Tuesday Thursday 9:30 10:35 11:35
+S3 Monday Tuesday Thursday 10:35 11:35 8:30
+S4 Monday Tuesday Thursday 11:35 8:30 9:30
+S5 Wednesday Friday  9:30 11:35 
+S6 Wednesday Friday  11:35 9:30 
+S7 Wednesday Friday  8:30 8:30 
+S8 Monday Thursday  2:00 2:00 
+S9 Monday Thursday  3:30 3:30 
