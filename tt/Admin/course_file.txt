@@ -6,8 +6,8 @@ Engineering_graphics              120 1 0 0 n
 chemistry_lab                     50 1 0 0 y
 Engineering_graphics_lab          50 1 0 0 y
 Engineering_lab                   50 1 0 0 y
-Economics                         80 2 3 4 n
-Data_Analysis                     80 2 3 4 n
+Economics                         120 2 3 4 n
+Data_Analysis                     120 2 3 4 n
 Data_structure_and_algo           50 2 0 0 n
 Discrete_structure                50 2 0 0 n
 Data_Structure_and_algo_lab       50 2 0 0 y
