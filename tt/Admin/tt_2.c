@@ -10,12 +10,17 @@
 #define lab_slot 8
 #define time_slt 15
 #define row 5
-struct node1{
+struct node
+{
 	char course[size];
 	int no_student;
 	int color[colors];
 	char lab;
+	int priority;
+	char *temp_slot[size];
+	char *temp_room[size];
 };
+
 
 struct node2{
     char *room_no[size];
@@ -44,26 +49,35 @@ struct node6{
 	int second_vertex;
 };
 
-struct node7
+
+// check weather slot is taken by same semester 
+int find(struct node c[], struct node4 H[], int i ,int j,int ch)
 {
-	char time_slot[size];
-	char  day[colors][value];
-	char time[colors][value];
-};
-struct node8
-{
-	char temp_array[size];
-};
- struct node9
- {
- 	char time_slot[size];
-	int  day[3];
-	int time[3];
- };
- void sort(int n,struct node1 x[]) 
+	int t,k;
+	for(t=0; t<ch; t++)
+	{
+		if(!strcmp(H[j].slt.slot, temp1[t].tslot))
+		{
+			for(k=0;k<colors;k++)
+			{
+				if(c[i].color[k] !=0 && c[i].color[k] == temp1[t].tcolor[k])
+				{
+				 return 1;
+				}
+			}
+			//printf("color=%d\tslot =%s\n",temp1[t].tcolor, temp1[t].tslot);
+			
+		}
+	}
+	return 0;
+}
+
+/* Sorting Function */
+ void sort(int n,struct node x[]) 
  {   int i,j;
-    struct node1 temp;
+    struct node temp;
  	for (i = 0; i < n; ++i) 
+        { if(x[i].priority == 0)
         {
             for (j = i + 1; j < n; ++j) 
             {
@@ -76,11 +90,30 @@ struct node8
             }
         }
   }
+}
+  
+  void sort_priority(int n,struct node x[]) 
+ {   int i,j;
+    struct node temp;
+ 	for (i = 0; i < n; ++i) 
+        {
+            for (j = i + 1; j < n; ++j) 
+            {
+                if (x[i].priority < x[j].priority) 
+                {
+                    temp = x[i];
+                    x[i] = x[j];
+                    x[j] = temp;
+                }
+            }
+        }
+  } 
+  
  
 int main()
 {
  int i,j,k,m,y,col,flag,temp,l,ch=0,edge=0,loop,local;
- struct node1 c[max];
+ struct node c[max];
  struct node2 r[max];
  struct node3 s[max];
  struct node4 H[max];
@@ -324,7 +357,8 @@ for(i=0;i<15;i++)
 		}
         fclose(course_file);
     }
-     sort((m),c);  
+     sort_priority((m),c);
+	 sort((m),c);  
  room_file = fopen("room_file.txt", "r");
 
     if (room_file == NULL)
