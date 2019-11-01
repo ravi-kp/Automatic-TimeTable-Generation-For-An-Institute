@@ -841,7 +841,7 @@ for(i=0;i<(m);i++)
     		fprintf(csVIIsem,"%s",mat[i][0]);
     		for(j=1;j<9;j++)
  	        {
- 		       fprintf(csVIIsem,"%30s\t",mat[i][j]);
+ 		       fprintf(csVIIsem," %s",mat[i][j]);
  		            
 	           }
 	           fprintf(csVIIsem,"\n\n",mat[i][j]);
