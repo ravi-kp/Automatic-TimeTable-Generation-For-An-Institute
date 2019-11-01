@@ -4,23 +4,12 @@
 #define max 500
 #define colors 3
 #define value 100
-#define size 50
+#define size 80
 #define room 11
 #define lab_room 7
 #define lab_slot 8
 #define time_slt 15
 #define row 5
-struct node
-{
-	char course[size];
-	int no_student;
-	int color[colors];
-	char lab;
-	int priority;
-	char *temp_slot[size];
-	char *temp_room[size];
-};
-
 struct node1{
 	char course[size];
 	int no_student;
@@ -57,32 +46,29 @@ struct node6{
 
 struct node7
 {
-	char time_slot[size];
-	char  day[colors][value];
-	char time[colors][value];
-};
- struct node9
- {
- 	char time_slot[size];
-	int  day[3];
+	char *time_slot;
+	int day[3];
 	int time[3];
- };
+};
+
 // check weather slot is taken by same semester 
-int find(struct node c[], struct node4 H[], int i ,int j,int ch)
+int find(struct node1 c[], struct node4 H[], int i ,int j,int ch)
 {
-	int t,k;
+	int t,k,l;
 	for(t=0; t<ch; t++)
 	{
 		if(!strcmp(H[j].slt.slot, temp1[t].tslot))
 		{
 			for(k=0;k<colors;k++)
 			{
-				if(c[i].color[k] !=0 && c[i].color[k] == temp1[t].tcolor[k])
+				for(l=0;l<colors;l++)
+				{
+				if(c[i].color[k] !=0 && c[i].color[k] == temp1[t].tcolor[l])
 				{
 				 return 1;
 				}
+			   }
 			}
-			//printf("color=%d\tslot =%s\n",temp1[t].tcolor, temp1[t].tslot);
 			
 		}
 	}
@@ -90,11 +76,10 @@ int find(struct node c[], struct node4 H[], int i ,int j,int ch)
 }
 
 /* Sorting Function */
- void sort(int n,struct node x[]) 
+ void sort(int n,struct node1 x[]) 
  {   int i,j;
-    struct node temp;
+    struct node1 temp;
  	for (i = 0; i < n; ++i) 
-        { if(x[i].priority == 0)
         {
             for (j = i + 1; j < n; ++j) 
             {
@@ -107,53 +92,17 @@ int find(struct node c[], struct node4 H[], int i ,int j,int ch)
             }
         }
   }
-}
   
-  void sort_priority(int n,struct node x[]) 
- {   int i,j;
-    struct node temp;
- 	for (i = 0; i < n; ++i) 
-        {
-            for (j = i + 1; j < n; ++j) 
-            {
-                if (x[i].priority < x[j].priority) 
-                {
-                    temp = x[i];
-                    x[i] = x[j];
-                    x[j] = temp;
-                }
-            }
-        }
-  } 
-  
- void sort_room(int n,struct node2 x[]) 
- {   int i,j;
-    struct node2 temp;
- 	for (i = 0; i < n; ++i) 
-        {
-            for (j = i + 1; j < n; ++j) 
-            {
-                if (x[i].capacity > x[j].capacity) 
-                {
-                    temp = x[i];
-                    x[i] = x[j];
-                    x[j] = temp;
-                }
-            }
-        }
-  }
-
 int main()
 {
  int i,j,k,m,y,col,flag,temp,l,ch=0,edge=0,loop,local;
- struct node c[max];
+ struct node1 c[max];
  struct node2 r[max];
  struct node3 s[max];
  struct node4 H[max];
  int graph[value][max];
  struct node6 M[max];
  struct node7 ts[time_slt];
- struct node9 ts_new[max];
  int slot_room,slot_lab,x=15;
  char* mat[6][9];
  char tslot[size];
@@ -162,7 +111,7 @@ int main()
  FILE *room_file,*course_file,*slot_file,*input_graph,*output_graph;
   
  /**************************** taking inputs from file for courses and rooms*********************/
-slot_file = fopen("slot_fromdb.txt", "r");
+    slot_file = fopen("slot_file.txt", "r");
 
     if (slot_file == NULL)
     {
@@ -170,203 +119,12 @@ slot_file = fopen("slot_fromdb.txt", "r");
     }
     else
     {
-        for(i=0;i<15;i++)
+        for(i=0;i<x;i++)
         {
-        	fscanf(slot_file,"%s ",&ts[i].time_slot);
-        	if(i<4)
-        	{
-			
-        	for(j=0;j<colors;j++)
-        	{
-        	fscanf(slot_file,"%s ",&ts[i].day[j]);	
-			}
-			for(j=0;j<3;j++)
-        	{
-        	fscanf(slot_file,"%s ",&ts[i].time[j]);	
-			}
-			fscanf(slot_file,"\n");
-	     }
-	     else
-	     {
-	     	for(j=0;j<2;j++)
-        	{
-        	fscanf(slot_file,"%s ",&ts[i].day[j]);	
-			}
-			for(j=0;j<2;j++)
-        	{
-        	fscanf(slot_file,"%s ",&ts[i].time[j]);	
-			}
-			fscanf(slot_file,"\n");
-		 }
+        	fscanf(slot_file,"%s",&s[i].slot);
 		}
         fclose(slot_file);
     }
-for(i=0;i<15;i++)
-{
-            printf("%s ",ts[i].time_slot);
-            if(i<4)
-            {
-			for(j=0;j<colors;j++)
-        	{
-        	printf("%s ",ts[i].day[j]);	
-			}
-			for(j=0;j<colors;j++)
-        	{
-        	printf("%s ",ts[i].time[j]);	
-			}
-			printf("\n");
-		}
-		  else
-	     {
-	     	for(j=0;j<2;j++)
-        	{
-        	printf("%s ",ts[i].day[j]);	
-			}
-			for(j=0;j<2;j++)
-        	{
-        	printf("%s ",ts[i].time[j]);	
-			}
-			printf("\n");
-		 }
-		
-}
-
-for(i=0;i<15;i++)
-{
-	if(i<4)
-	{
-		strcpy(ts_new[i].time_slot,ts[i].time_slot);
-		for(j=0;j<3;j++)
-		{
-		if(!(strcmp(&(ts[i].day[j]),"Monday")))
-		{
-			ts_new[i].day[j]=0;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Tuesday")))
-		{
-			ts_new[i].day[j]=1;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Wednesday")))
-		{
-			ts_new[i].day[j]=2;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Thursday")))
-		{
-			ts_new[i].day[j]=3;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Friday")))
-		{
-			ts_new[i].day[j]=4;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Saturday")))
-		{
-			ts_new[i].day[j]=5;
-		}
-	}
-	for(j=0;j<3;j++)
-	{
-		if(!(strcmp(&(ts[i].time[j]),"8:30")) || !(strcmp(&(ts[i].time[j]),"9:00")))
-		{
-			ts_new[i].time[j]=0;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"9:30")) || !(strcmp(&(ts[i].time[j]),"9:35")) || !(strcmp(&(ts[i].time[j]),"10:00")))
-		{
-			ts_new[i].time[j]=1;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"10:30")) || !(strcmp(&(ts[i].time[j]),"10:35")) || !(strcmp(&(ts[i].time[j]),"11:00")))
-		{
-			ts_new[i].time[j]=2;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"11:30")) || !(strcmp(&(ts[i].time[j]),"11:35")) || !(strcmp(&(ts[i].time[j]),"12:00")))
-		{
-			ts_new[i].time[j]=3;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"2:00")) || !(strcmp(&(ts[i].time[j]),"2:30")))
-		{
-			ts_new[i].time[j]=4;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"3:30")) || !(strcmp(&(ts[i].time[j]),"4:00")))
-		{
-			ts_new[i].time[j]=5;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"5:00")) || !(strcmp(&(ts[i].time[j]),"5:30")))
-		{
-			ts_new[i].time[j]=6;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"6:30")) || !(strcmp(&(ts[i].time[j]),"7:00")))
-		{
-			ts_new[i].time[j]=7;
-		}
-	}
-	
-  }
-  else
-  {
-  	strcpy(ts_new[i].time_slot,ts[i].time_slot);
-		for(j=0;j<2;j++)
-		{
-		if(!(strcmp(&(ts[i].day[j]),"Monday")))
-		{
-			ts_new[i].day[j]=0;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Tuesday")))
-		{
-			ts_new[i].day[j]=1;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Wednesday")))
-		{
-			ts_new[i].day[j]=2;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Thursday")))
-		{
-			ts_new[i].day[j]=3;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Friday")))
-		{
-			ts_new[i].day[j]=4;
-		}
-		if(!(strcmp(&(ts[i].day[j]),"Saturday")))
-		{
-			ts_new[i].day[j]=5;
-		}
-	}
-	for(j=0;j<2;j++)
-	{
-		if(!(strcmp(&(ts[i].time[j]),"8:30")) || !(strcmp(&(ts[i].time[j]),"9:00")))
-		{
-			ts_new[i].time[j]=0;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"9:30")) || !(strcmp(&(ts[i].time[j]),"9:35")) || !(strcmp(&(ts[i].time[j]),"10:00")))
-		{
-			ts_new[i].time[j]=1;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"10:30")) || !(strcmp(&(ts[i].time[j]),"10:35")) || !(strcmp(&(ts[i].time[j]),"11:00")))
-		{
-			ts_new[i].time[j]=2;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"11:30")) || !(strcmp(&(ts[i].time[j]),"11:35")) || !(strcmp(&(ts[i].time[j]),"12:00")))
-		{
-			ts_new[i].time[j]=3;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"2:00")) || !(strcmp(&(ts[i].time[j]),"2:30")))
-		{
-			ts_new[i].time[j]=4;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"3:30")) || !(strcmp(&(ts[i].time[j]),"4:00")))
-		{
-			ts_new[i].time[j]=5;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"5:00")) || !(strcmp(&(ts[i].time[j]),"5:30")))
-		{
-			ts_new[i].time[j]=6;
-		}
-		if(!(strcmp(&(ts[i].time[j]),"6:30")) || !(strcmp(&(ts[i].time[j]),"7:00")))
-		{
-			ts_new[i].time[j]=7;
-		}
-	}
-  }
-}
     
 	
    course_file = fopen("course_file.txt", "r");
@@ -386,12 +144,6 @@ for(i=0;i<15;i++)
         	fscanf(course_file,"%d ",&c[i].color[j]);	
 			}
 			fscanf(course_file,"%c",&c[i].lab);
-			fscanf(course_file,"%d",&c[i].priority);
-			if(c[i].priority == 1)
-			{
-			fscanf(course_file,"%s",&c[i].temp_slot);
-			fscanf(course_file,"%s",&c[i].temp_room);	
-			}
 		}
         fclose(course_file);
     }
@@ -399,22 +151,19 @@ for(i=0;i<15;i++)
 /*************************all inputs has been taken from files *************************************/
 
 /********************Sorting the course according to no of student enrolled  **************************/
-   sort_priority((m),c);
    sort((m),c);
 /******************** course has been sorted ***************************************/   
    
- for(i=0;i<(m);i++)
+ /*for(i=0;i<(m);i++)
  {
  	printf("%s\t%d\t",c[i].course,c[i].no_student);
  	for(j=0;j<3;j++)
  	{
  		printf("%d\t",c[i].color[j]);
 	 }
-	 printf("%c\t",c[i].lab);
-	 printf("%d\t",c[i].priority);
-	 printf("%s\t%s",c[i].temp_slot,c[i].temp_room);
+	 printf("%c",c[i].lab);
  	printf("\n");
- }  
+ }  */
  room_file = fopen("room_file.txt", "r");
 
     if (room_file == NULL)
@@ -429,17 +178,14 @@ for(i=0;i<15;i++)
 		}
         fclose(room_file);
     } 
-sort_room((room+lab_room),r);
-for(i=0;i<((room+lab_room));i++)
-{
-printf("%s %d\n",r[i].room_no,r[i].capacity);
-}    
+       
+ 
 k=0;
 for(i=0;i<x;i++){
 	for(j=0;j<(room);j++)
 	{
 		//H[k].slt.slot=s[i].slot;
-		strcpy(H[k].slt.slot,ts_new[i].time_slot);
+		strcpy(H[k].slt.slot,s[i].slot);
 		strcpy(H[k].cl.room_no,r[j].room_no);
 		//H[k].cl.room_no=r[j].room_no;
 		H[k].cl.capacity=r[j].capacity;
@@ -450,7 +196,8 @@ for(i=0;i<x;i++){
 for(i=lab_room;i<x;i++){
 	for(j=room;j<(room+lab_room);j++)
 	{
-		strcpy(H[k].slt.slot,ts_new[i].time_slot);
+		//H[k].slt.slot=s[i].slot;
+		strcpy(H[k].slt.slot,s[i].slot);
 		strcpy(H[k].cl.room_no,r[j].room_no);
 		//H[k].cl.room_no=r[j].room_no;
 		H[k].cl.capacity=r[j].capacity;
@@ -459,61 +206,20 @@ for(i=lab_room;i<x;i++){
 }
 
 
-/****************** all slots combined with room no.************************/
-  for(i=0;i<(m);i++)
+/****************** all slots combine with room no.************************/  
+ 
+ for(i=0;i<(m);i++)
  {
  	for(j=0;j<slot_room;j++)
  	{
  		graph[i][j]=0;
 	 }
  }
-  
-/*************************high priority *************************************/  
-  for(i=0;i<m;i++)
-  {
-  	if(c[i].priority==1)
-  	{
-  		tslot[0]='\0'; 
-   for(j=0;j<slot_room;j++)
-   { 
-   	if(c[i].no_student<=H[j].cl.capacity)
-   	{
-		if(find(c,H,i,j,ch))
-			continue;
-
-		// filling all the same slot
-		if(!(strcmp(c[i].temp_slot,H[j].slt.slot)))
-		{
-   			if(!(strcmp(c[i].temp_room,H[j].cl.room_no)))
-   			{
-			   if(tslot[0] == '\0')
-			   {
-			   graph[i][j] =1;
-			strcpy(tslot ,H[j].slt.slot);
-	       }
-		}
-	}
-		else if(!strcmp(tslot, H[j].slt.slot))
-		{
-			graph[i][j] = 1;
-		} 	
-	}
-   }
-   for(k=0;k<colors;k++)
-   {
-   	temp1[ch].tcolor[k] = c[i].color[k];
-   }
-	
-	strcpy(temp1[ch].tslot, tslot);
-	//printf("temp1 %d %s %s\n",temp1[ch].tcolor, temp1[ch].tslot, H[j].slt.slot);
-	ch++;
-   } 
-   
-   
-/*****************************low priority ******************************************/  
- if(c[i].priority==0)
- {   
-  if(c[i].lab=='n')
+ 
+ 
+ for(i=0;i<(m);i++)
+ { 
+    if(c[i].lab=='n')
  {  
     tslot[0]='\0'; 
    for(j=0;j<slot_room;j++)
@@ -526,7 +232,7 @@ for(i=lab_room;i<x;i++){
 		// filling all the same slot
 		if(tslot[0] == '\0')
 		{
-   		    graph[i][j] =1;
+   			graph[i][j] =1;
 			strcpy(tslot ,H[j].slt.slot);
 		}
 		else if(!strcmp(tslot, H[j].slt.slot))
@@ -541,7 +247,8 @@ for(i=lab_room;i<x;i++){
    }
 	
 	strcpy(temp1[ch].tslot, tslot);
-	ch++; 
+	ch++;
+   
   } 
 	 
 else
@@ -574,14 +281,10 @@ else
 	strcpy(temp1[ch].tslot, tslot);
 	//printf("temp1 %d %s %s\n",temp1[ch].tcolor, temp1[ch].tslot, H[j].slt.slot);
 	ch++;
+   
   } 
- } 
-}
-
-
-
-
-
+	 
+  } 
 
 
 
