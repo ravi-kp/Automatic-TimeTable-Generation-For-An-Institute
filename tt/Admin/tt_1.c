@@ -57,11 +57,16 @@ struct node6{
 
 struct node7
 {
-	char *time_slot;
-	int day[3];
-	int time[3];
+	char time_slot[size];
+	char  day[colors][value];
+	char time[colors][value];
 };
-
+ struct node9
+ {
+ 	char time_slot[size];
+	int  day[3];
+	int time[3];
+ };
 // check weather slot is taken by same semester 
 int find(struct node c[], struct node4 H[], int i ,int j,int ch)
 {
@@ -148,6 +153,7 @@ int main()
  int graph[value][max];
  struct node6 M[max];
  struct node7 ts[time_slt];
+ struct node9 ts_new[max];
  int slot_room,slot_lab,x=15;
  char* mat[6][9];
  char tslot[size];
@@ -156,7 +162,7 @@ int main()
  FILE *room_file,*course_file,*slot_file,*input_graph,*output_graph;
   
  /**************************** taking inputs from file for courses and rooms*********************/
-    slot_file = fopen("slot_file.txt", "r");
+slot_file = fopen("slot_fromdb.txt", "r");
 
     if (slot_file == NULL)
     {
@@ -164,12 +170,203 @@ int main()
     }
     else
     {
-        for(i=0;i<x;i++)
+        for(i=0;i<15;i++)
         {
-        	fscanf(slot_file,"%s",&s[i].slot);
+        	fscanf(slot_file,"%s ",&ts[i].time_slot);
+        	if(i<4)
+        	{
+			
+        	for(j=0;j<colors;j++)
+        	{
+        	fscanf(slot_file,"%s ",&ts[i].day[j]);	
+			}
+			for(j=0;j<3;j++)
+        	{
+        	fscanf(slot_file,"%s ",&ts[i].time[j]);	
+			}
+			fscanf(slot_file,"\n");
+	     }
+	     else
+	     {
+	     	for(j=0;j<2;j++)
+        	{
+        	fscanf(slot_file,"%s ",&ts[i].day[j]);	
+			}
+			for(j=0;j<2;j++)
+        	{
+        	fscanf(slot_file,"%s ",&ts[i].time[j]);	
+			}
+			fscanf(slot_file,"\n");
+		 }
 		}
         fclose(slot_file);
     }
+for(i=0;i<15;i++)
+{
+            printf("%s ",ts[i].time_slot);
+            if(i<4)
+            {
+			for(j=0;j<colors;j++)
+        	{
+        	printf("%s ",ts[i].day[j]);	
+			}
+			for(j=0;j<colors;j++)
+        	{
+        	printf("%s ",ts[i].time[j]);	
+			}
+			printf("\n");
+		}
+		  else
+	     {
+	     	for(j=0;j<2;j++)
+        	{
+        	printf("%s ",ts[i].day[j]);	
+			}
+			for(j=0;j<2;j++)
+        	{
+        	printf("%s ",ts[i].time[j]);	
+			}
+			printf("\n");
+		 }
+		
+}
+
+for(i=0;i<15;i++)
+{
+	if(i<4)
+	{
+		strcpy(ts_new[i].time_slot,ts[i].time_slot);
+		for(j=0;j<3;j++)
+		{
+		if(!(strcmp(&(ts[i].day[j]),"Monday")))
+		{
+			ts_new[i].day[j]=0;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Tuesday")))
+		{
+			ts_new[i].day[j]=1;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Wednesday")))
+		{
+			ts_new[i].day[j]=2;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Thursday")))
+		{
+			ts_new[i].day[j]=3;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Friday")))
+		{
+			ts_new[i].day[j]=4;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Saturday")))
+		{
+			ts_new[i].day[j]=5;
+		}
+	}
+	for(j=0;j<3;j++)
+	{
+		if(!(strcmp(&(ts[i].time[j]),"8:30")) || !(strcmp(&(ts[i].time[j]),"9:00")))
+		{
+			ts_new[i].time[j]=0;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"9:30")) || !(strcmp(&(ts[i].time[j]),"9:35")) || !(strcmp(&(ts[i].time[j]),"10:00")))
+		{
+			ts_new[i].time[j]=1;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"10:30")) || !(strcmp(&(ts[i].time[j]),"10:35")) || !(strcmp(&(ts[i].time[j]),"11:00")))
+		{
+			ts_new[i].time[j]=2;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"11:30")) || !(strcmp(&(ts[i].time[j]),"11:35")) || !(strcmp(&(ts[i].time[j]),"12:00")))
+		{
+			ts_new[i].time[j]=3;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"2:00")) || !(strcmp(&(ts[i].time[j]),"2:30")))
+		{
+			ts_new[i].time[j]=4;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"3:30")) || !(strcmp(&(ts[i].time[j]),"4:00")))
+		{
+			ts_new[i].time[j]=5;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"5:00")) || !(strcmp(&(ts[i].time[j]),"5:30")))
+		{
+			ts_new[i].time[j]=6;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"6:30")) || !(strcmp(&(ts[i].time[j]),"7:00")))
+		{
+			ts_new[i].time[j]=7;
+		}
+	}
+	
+  }
+  else
+  {
+  	strcpy(ts_new[i].time_slot,ts[i].time_slot);
+		for(j=0;j<2;j++)
+		{
+		if(!(strcmp(&(ts[i].day[j]),"Monday")))
+		{
+			ts_new[i].day[j]=0;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Tuesday")))
+		{
+			ts_new[i].day[j]=1;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Wednesday")))
+		{
+			ts_new[i].day[j]=2;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Thursday")))
+		{
+			ts_new[i].day[j]=3;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Friday")))
+		{
+			ts_new[i].day[j]=4;
+		}
+		if(!(strcmp(&(ts[i].day[j]),"Saturday")))
+		{
+			ts_new[i].day[j]=5;
+		}
+	}
+	for(j=0;j<2;j++)
+	{
+		if(!(strcmp(&(ts[i].time[j]),"8:30")) || !(strcmp(&(ts[i].time[j]),"9:00")))
+		{
+			ts_new[i].time[j]=0;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"9:30")) || !(strcmp(&(ts[i].time[j]),"9:35")) || !(strcmp(&(ts[i].time[j]),"10:00")))
+		{
+			ts_new[i].time[j]=1;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"10:30")) || !(strcmp(&(ts[i].time[j]),"10:35")) || !(strcmp(&(ts[i].time[j]),"11:00")))
+		{
+			ts_new[i].time[j]=2;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"11:30")) || !(strcmp(&(ts[i].time[j]),"11:35")) || !(strcmp(&(ts[i].time[j]),"12:00")))
+		{
+			ts_new[i].time[j]=3;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"2:00")) || !(strcmp(&(ts[i].time[j]),"2:30")))
+		{
+			ts_new[i].time[j]=4;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"3:30")) || !(strcmp(&(ts[i].time[j]),"4:00")))
+		{
+			ts_new[i].time[j]=5;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"5:00")) || !(strcmp(&(ts[i].time[j]),"5:30")))
+		{
+			ts_new[i].time[j]=6;
+		}
+		if(!(strcmp(&(ts[i].time[j]),"6:30")) || !(strcmp(&(ts[i].time[j]),"7:00")))
+		{
+			ts_new[i].time[j]=7;
+		}
+	}
+  }
+}
     
 	
    course_file = fopen("course_file.txt", "r");
@@ -242,7 +439,7 @@ for(i=0;i<x;i++){
 	for(j=0;j<(room);j++)
 	{
 		//H[k].slt.slot=s[i].slot;
-		strcpy(H[k].slt.slot,s[i].slot);
+		strcpy(H[k].slt.slot,ts_new[i].time_slot);
 		strcpy(H[k].cl.room_no,r[j].room_no);
 		//H[k].cl.room_no=r[j].room_no;
 		H[k].cl.capacity=r[j].capacity;
@@ -253,8 +450,7 @@ for(i=0;i<x;i++){
 for(i=lab_room;i<x;i++){
 	for(j=room;j<(room+lab_room);j++)
 	{
-		//H[k].slt.slot=s[i].slot;
-		strcpy(H[k].slt.slot,s[i].slot);
+		strcpy(H[k].slt.slot,ts_new[i].time_slot);
 		strcpy(H[k].cl.room_no,r[j].room_no);
 		//H[k].cl.room_no=r[j].room_no;
 		H[k].cl.capacity=r[j].capacity;
