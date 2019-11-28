@@ -1,0 +1,12 @@
+Day 8:30-9:25 9:30-10:25 10:35-11:30 11:35-12:30 2:00-3:25 3:30-4:55 5:00-6:25 6:30-7:55
+
+Monday Applied_Thermodynamics,215 Elements_of_3D_Modeling,211 Composite_Materials,211 Theory_of_Elasticity,115 Manufacturing_Processes_LabD1,Manufacturing_Lab:: Manufacturing_Processes_LabD1,Manufacturing_Lab:: Machine_Design,115:: Artificial_Neural_Networks_Deep_Learning,203::
+
+Tuesday Theory_of_Elasticity,115 Applied_Thermodynamics,215 Elements_of_3D_Modeling,211 Composite_Materials,211 Heat_Transfer_LabD1,Heat_Transfer_Lab:: Heat_Transfer_LabD1,Heat_Transfer_Lab:: Environmental_Studies,23:: classical_mechanics,211::
+
+Wednesday ......... ......... ......... ......... KDOM_LabD1,KDOM_Lab:: KDOM_LabD1,KDOM_Lab:: ......... .........
+
+Thursday Composite_Materials,211 Theory_of_Elasticity,115 Applied_Thermodynamics,215 Elements_of_3D_Modeling,211 ......... ......... Machine_Design,115:: Artificial_Neural_Networks_Deep_Learning,203::
+
+Friday ......... ......... ......... ......... ......... ......... Environmental_Studies,23:: classical_mechanics,211::
+

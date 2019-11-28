@@ -1,0 +1,16 @@
+Courese_No Course_Name Division Department Lec_Slot Lec_Venue Tut_Slot Tut_Venue Instructor 
+ Environmental_Studies  CSE S14 23 S14 23  
+ Statistical_Pattern_Recognition  CSE S1 119 S1 119  
+ Artificial_Intelligence_Lab  CSE L4 Computer_Lab(Ground_Floor) L4 Computer_Lab(Ground_Floor)  
+ Operating_System_Lab  CSE L5 Computer_Lab(Ground_Floor) L5 Computer_Lab(Ground_Floor)  
+ Compilers  CSE S2 210 S2 210  
+ Parameterized_Algo_and_Complexity  CSE S3 215 S3 215  
+ Artificial_Neural_Networks_Deep_Learning  CSE S13 203 S13 203  
+ classical_mechanics  CSE S15 211 S15 211  
+ Operating_System  CSE S4 22 S4 22  
+ Software_Engineering  CSE S7 215 S7 215  
+         
+         
+         
+         
+         

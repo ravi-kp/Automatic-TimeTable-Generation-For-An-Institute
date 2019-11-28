@@ -1,0 +1,29 @@
+Room_No. Slot_occupied Slot_Free  
+21 S7,S1,S4,S3,
+22 S3,S4,
+23 S14,S1,S2,S3,S4,S7,S12,
+115 S7,S4,S12,
+117 S4,S1,S12,S2,
+119 S2,S1,S4,
+203 S13,
+207 S3,
+210 S1,S2,S7,S3,
+211 S4,S2,S3,S7,S12,S15,
+215 S2,S3,S1,S14,S7,
+Chemistry_Lab LX,L3,L1,
+Mech_Workshop 
+Eng_Drawing_Lab 
+Physics_Lab L2,L1,L3,
+Computer_Lab(Ground_Floor) L3,LX,L2,L1,L4,L5,
+Computer_LabII 
+Micro_Electronics_Lab L1,L2,LX,L4,L5,L6,
+Fluid_Mechanics 
+Micro_Electronics_Lab L1,L2,LX,L4,L5,L6,
+DSP/PE_Lab L1,L2,
+Heat_Transfer_Lab L2,
+SOM_Lab 
+KDOM_Lab LX,
+Measurement_Lab 
+Manufacturing_Lab L1,
+Machine_Lab 
+Solid_Mechanics_Lab 

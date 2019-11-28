@@ -1,0 +1,9 @@
+Courese_No Course_Name Division Department Lec_Slot Lec_Venue Tut_Slot Tut_Venue Instructor 
+ Statistical_Pattern_Recognition  EE S1 119 S1 119  
+ information_theory  EE S2 215 S2 215  
+ multivariable_control  EE S3 22 S3 22  
+ speech_processing  EE S4 21 S4 21  
+ Artificial_Neural_Networks_Deep_Learning  EE S13 203 S13 203  
+ classical_mechanics  EE S15 211 S15 211  
+ Quantum_info,communication,computation  EE S14 215 S14 215  
+         

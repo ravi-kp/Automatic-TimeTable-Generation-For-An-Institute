@@ -1,0 +1,11 @@
+Courese_No Course_Name Division Department Lec_Slot Lec_Venue Tut_Slot Tut_Venue Instructor 
+ Robotics  ME S1 117 S1 117  
+ Elements_of_3D_Modeling  ME S2 211 S2 211  
+ Composite_Materials  ME S3 211 S3 211  
+ Theory_of_Elasticity  ME S4 115 S4 115  
+ Turbomachinery  ME S7 211 S7 211  
+ Advanced_FEM  ME S12 211 S12 211  
+ Artificial_Neural_Networks_Deep_Learning  ME S13 203 S13 203  
+ classical_mechanics  ME S15 211 S15 211  
+ Quantum_info,communication,computation  ME S14 215 S14 215  
+         

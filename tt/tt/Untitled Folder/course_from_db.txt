@@ -1,0 +1,140 @@
+139
+Chemistry 120 1 CSE n 0 
+Chemistry_lab  40 1 CSE y 0   D1 Chemistry_Lab NULL NULL
+Chemistry_lab  40 1 CSE y 0   D2 Chemistry_Lab NULL NULL
+Chemistry_lab  40 1 CSE y 0   D3 Chemistry_Lab NULL NULL
+Calculus  120 1 CSE n 0 
+Quantum_physics_and_Applications 120 1 CSE n 0 
+Data Analysis 120 3 CSE,ME,EE n 0 
+Engineering_Graphics_Lab_(Theory_Session) 40 1 CSE y 0   D1 21 22 23
+Engineering_Graphics_Lab_(Theory_Session) 40 1 CSE y 0   D2 21 22 23
+Engineering_Graphics_Lab_(Theory_Session) 40 1 CSE y 0   D3 21 22 23
+Engineering_Graphics_lab_(Lab_session) 40 1 CSE y 0   D1 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Engineering_Graphics_lab_(Lab_session) 40 1 CSE y 0   D2 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Engineering_Graphics_lab_(Lab_session) 40 1 CSE y 0   D3 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Engineering_Lab  40 1 CSE y 0   D1 Mech_Workshop NULL NULL
+Engineering_Lab  40 1 CSE y 0   D2 Mech_Workshop NULL NULL
+Engineering_Lab  40 1 CSE y 0   D3 Mech_Workshop NULL NULL
+Economics  120 3 CSE,ME,EE n 0 
+Data_Structures_and_Algorithms 50 3 CSE n 0 
+Discrete_Structures 50 3 CSE n 0 
+Data_Structures_and_Algorithms_Lab 50 3 CSE y 0   D1 Computer_LabII NULL NULL
+Software_Systems_Lab 50 1 CSE y 0   D1 Computer_LabII NULL NULL
+Electronic_devices  50 3 EE n 0 
+Network_theory  50 3 EE n 0 
+Signals_and_Systems 50 3 EE n 0 
+Complex_Analysis 50 3 EE n 0 
+Differential_equations_II 50 3 CSE n 0 
+Engineering_Mechanics 50 3 ME n 0 
+Engineering_Materials 50 3 ME n 0 
+Thermodynamics 50 3 ME n 0 
+Machine_Drawing_and_3D_Modelling  50 3 ME y 0   D1 Computer_Lab(Ground_Floor) NULL NULL
+Introduction_to_Literature_Philosophy 80 5 CSE,ME,EE n 0 
+Computer_Architecture  75 5 CSE,EE n 0 
+Data_Bases_and_Information_Systems 40 5 CSE n 0 
+Elementary_Algebra_and_Number_Theory 40 5 CSE n 0 
+Probability_and_Random_Processes 60 5 CSE,EE n 0 
+Pattern_recognition_and_machine_learning 60 57 CSE,EE n 0 
+Graph_theory_and_combinatorics 40 57 CSE n 0 
+Data_Bases_and_Information_Systems_Lab 40 5 CSE y 0   D1 Computer_LabII NULL NULL
+Digital_Systems_Lab 40 5 CSE,EE y 0   D1 Micro_Electronics_Lab NULL NULL
+Digital_Systems_Lab 40 5 CSE,EE y 0   D2 Micro_Electronics_Lab NULL NULL
+Computer_Architecture_Lab 40 5 CSE,EE y 0   D1 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Computer_Architecture_Lab 40 5 CSE,EE y 0   D2 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Distributed_Systems  40 7 CSE n 0 
+Reinforcement_learning  50 7 CSE,ME,EE n 0 
+Astrophysics_for_Engineers  40 7 CSE,ME,EE n 0 
+Statistical_Mechanics 40 7 CSE,ME,EE n 0 
+Basics_of_Accounting_&_Financial_Management 40 7 CSE,ME,EE n 0 
+Technological_entrepreneurship  40 7 CSE,ME,EE n 0 
+Finite_Element_Analysis 40 7 ME n 0 
+Vibrations_of_Linear_Systems 40 7 ME n 0 
+Introduction_to_Combustion 40 7 ME n 0 
+Power_system_dynamics_and-control 40 7 EE n 0 
+Wireless_communication 40 7 EE n 0 
+VLSI_Design 40 7 EE n 0 
+Control_systems  70 5 ME,EE n 0 
+Power_Systems 40 5 EE n 0 
+Analog_Circuits_Lab 40 5 EE y 0   D1 Micro_Electronics_Lab NULL NULL
+Electrical_Machines _and_Power_Electronics_Lab 40 5 EE y 0   D1 Machine_Lab NULL NULL
+Heat_Transfer 40 5 ME n 0 
+Kinematics_and-Dynamics_of_Machines 40 5 ME n 0 
+Manufacturing_Processes_II 40 5 ME n 0 
+Control_Systems_Lab 35 5 ME,EE y 0   D1 DSP/PE_Lab NULL NULL
+Control_Systems_Lab 35 5 ME,EE y 0   D2 DSP/PE_Lab NULL NULL
+Solid_Mechanics_Lab 20 5 ME y 0   D1 Solid_Mechanics_Lab NULL NULL
+Solid_Mechanics_Lab 20 5 ME y 0   D2 Solid_Mechanics_Lab NULL NULL
+Mechanical_Measurements_Lab 20 5 ME y 0   D1 Micro_Electronics_Lab Measurement_Lab NULL
+Mechanical_Measurements_Lab 20 5 ME y 0   D2 Micro_Electronics_Lab Measurement_Lab NULL
+Communications_Lab  40 7 EE y 0   D1 DSP/PE_Lab NULL NULL
+Manufacturing_Processes_Lab  40 7 ME y 0   D1 Manufacturing_Lab NULL NULL
+Essential_biology	 120 2 CSE n 0 
+Computer_programming	 120 2 CSE n 0 
+Introduction_to_electrical_system	 120 2 CSE n 0 
+Linear_Algebra	 120 2 CSE n 0 
+Differential_Equation_I	 120 2 CSE n 0 
+Electricity_and_Magnetism	 120 2 CSE n 0 
+Introduction_to_electrical_system_Lab	 40 2 CSE y 0   D1 Micro_Electronics_Lab NULL NULL
+Introduction_to_electrical_system_Lab	 40 2 CSE y 0   D2 Micro_Electronics_Lab NULL NULL
+Introduction_to_electrical_system_Lab	 40 2 CSE y 0   D3 Micro_Electronics_Lab NULL NULL
+Physics_Lab 40 2 CSE y 0   D1 Physics_Lab NULL NULL
+Physics_Lab 40 2 CSE y 0   D2 Physics_Lab NULL NULL
+Physics_Lab 40 2 CSE y 0   D3 Physics_Lab NULL NULL
+Essential_biology_Lab	 40 2 CSE y 0   D1 Chemistry_Lab NULL NULL
+Essential_biology_Lab	 40 2 CSE y 0   D2 Chemistry_Lab NULL NULL
+Essential_biology_Lab	 40 2 CSE y 0   D3 Chemistry_Lab NULL NULL
+Computer_Programming_Lab	 40 2 CSE y 0   D1 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Computer_Programming_Lab	 40 2 CSE y 0   D2 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Computer_Programming_Lab	 40 2 CSE y 0   D3 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Fluid_Mechanics_II 50 4 ME n 0 
+Manufacturing_Process_I 50 4 ME n 0 
+Mechanics_of_Materials 50 4 ME n 0 
+Numerical-Analysis 40 4 ME n 0 
+Control_Systems 80 4 ME,EE n 0 
+Intro_to_analog_ckt_&_probability 50 4 EE n 0 
+Intro_to_electrical_machine_power_electronics 50 4 EE n 0 
+electromagnetics_and_intro_to_power_system 50 4 EE n 0 
+Control_Systems_Lab 40 4 ME,EE y 0   D1 DSP/PE_Lab NULL NULL
+Control_Systems_Lab 40 4 ME,EE y 0   D2 DSP/PE_Lab NULL NULL
+Devices_and_Circuits_Lab 50 4 EE y 0   D1 Micro_Electronics_Lab NULL NULL
+Environmental_Studies 120 6 CSE,ME,EE n 1 S12 23 
+Digital_Systems 80 4 CSE,EE n 0 
+Digital_System_Lab 40 4 CSE,EE y 0   D1 Micro_Electronics_Lab NULL NULL
+Digital_System_Lab 40 4 CSE,EE y 0   D2 Micro_Electronics_Lab NULL NULL
+Design_and_Analysis_of_Algo 40 4 CSE n 0 
+Computer_Network 40 4 CSE n 0 
+Automata_Theory 40 4 CSE n 0 
+Computer_Network_Lab 40 4 CSE y 0   D1 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Applied_Thermodynamics 40 6 ME n 0 
+Machine_Design 40 6 ME n 0 
+Manufacturing_Processes_Lab 40 6 ME y 0   D1 Manufacturing_Lab NULL NULL
+Heat_Transfer_Lab 40 6 ME y 0   D1 Heat_Transfer_Lab NULL NULL
+KDOM_Lab 40 6 ME y 0   D1 KDOM_Lab NULL NULL
+Artificial_Intelligence 40 6 CSE n 0 
+Operating_System 40 6 CSE n 0 
+Software_Engineering 40 6 CSE n 0 
+Artificial_Intelligence_Lab 40 6 CSE y 0   D1 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Operating_System_Lab 40 6 CSE y 0   D1 Computer_Lab(Ground_Floor) Computer_LabII NULL
+Data_Analysis 40 6 EE n 0 
+Electronic_Devices 40 6 EE n 0 
+DSP_Lab 40 6 EE y 0   D1 DSP/PE_Lab NULL NULL
+Electronics_Devices_Lab 40 6 EE y 0   D1 Micro_Electronics_Lab NULL NULL
+IC_Engines 40 8 ME n 0 
+Composite_Materials 40 68 ME n 0 
+Elements_of_3D_Modeling 40 ME n 0 
+Theory_of_Elasticity 40 68 ME n 0 
+Turbomachinery 40 68 ME n 0 
+Advanced_FEM 40 8 ME n 0 
+Compilers 40 68 CSE n 0 
+Parameterized_Algo_and_Complexity 40 68 CSE n 0 
+Statistical_Pattern_Recognition 50 68 CSE,EE n 0 
+information_theory 50 68 EE n 0 
+multivariable_control 50 68 EE n 0 
+speech_processing 50 68 EE n 0 
+Robotics 50 8 ME n 0 
+Artificial_Neural_Networks_Deep_Learning 40 68 CSE,ME,EE n 0 
+Modernism_its_heroic 40 8 CSE,ME,EE n 0 
+classical_mechanics 40 68 CSE,ME,EE n 0 
+Applied_Ethics 40 68 CSE,ME,EE n 0 
+Quantum_info,communication,computation 40 8 CSE,ME,EE n 0 
+Sustainable_energy_and_energy_matetials 40 8 CSE,ME,EE n 0 

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+
+<title>untitled document</title>
+
+<style media="screen">
+.hide  {
+    display: none;
+ }
+</style>
+<style>
+
+	.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 25px;
+   overflow: hidden;
+   width: 190px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 25px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 215px;
+}
+
+.styled-select.slate {
+   background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+   height: 25px;
+   width: 190px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 30px;
+   width: 215px;
+}
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+.green   { background-color: #b0c4de; }
+.green select   {; }
+
+
+.button {
+  background-color: #4CAF50;
+  border: groove;
+  color: white;
+  padding: 2px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  border: groove;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+.button2:before{
+	content:'';
+}
+
+
+
+    </style>
+</head>
+<body> 
+<form id="myform" action="#">
+<select id="location" name="drop">
+ <option value="">drop selection</option>
+ <option value="loc1">Location 1</option>
+ <option value="loc2">Location 2</option>
+ <option value="loc3">Location 3</option>
+ <option value="loc4">Location 4</option>
+ <option value="loc5">Location 5</option>
+ <option value="loc6">Location 6</option>
+ <option value="loc7">Location 7</option>
+</select>
+<select id="second" name="term">
+ <option value="">term selection</option>
+ <option value="OPT1">Option 1</option>
+ <option value="OPT2">Option 2</option>
+ <option value="OPT3">Option 3</option>
+ <option value="OPT4">Option 4</option>
+</select>
+<select id="third" name="term1">
+ <option value="">term selection</option>
+ <option value="OPT1">Option 1</option>
+ <option value="OPT2">Option 2</option>
+ <option value="OPT3">Option 3</option>
+ <option value="OPT4">Option 4</option>
+</select>
+</form>
+
+<script>
+(function() {
+   'use strict';
+   /* jshint browser: true */
+
+   var d=document;
+   var mf=d.getElementById('myform');
+   var se=d.getElementById('second');
+   var ti=d.getElementById('third'); 
+   var lo=d.getElementById('location')
+   var temp;
+
+   mf.reset();
+   se.className='hide';
+   ti.className='hide';
+   lo.onchange=function() {
+if(this.value==='loc5') {
+   se.className=se.className.replace('hide','');
+   ti.className=ti.className.replace('hide','');
+   
+ }
+else {
+   temp=this.value;
+   se.className='hide';
+   mf.reset();
+   lo.value=temp;
+  }
+ };
+}());
+</script>
+</body>
+</html>

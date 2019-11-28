@@ -1,0 +1,11 @@
+Courese_No Course_Name Division Department Lec_Slot Lec_Venue Tut_Slot Tut_Venue Instructor 
+ Digital_Systems  CSE S1 210 S1 210  
+ Digital_System_Lab  CSE L5 Micro_Electronics_Lab L5 Micro_Electronics_Lab  
+ Digital_System_Lab  CSE L6 Micro_Electronics_Lab L6 Micro_Electronics_Lab  
+ Computer_Network_Lab  CSE L1 Computer_Lab(Ground_Floor) L1 Computer_Lab(Ground_Floor)  
+ Design_and_Analysis_of_Algo  CSE S2 117 S2 117  
+ Computer_Network  CSE S3 210 S3 210  
+ Automata_Theory  CSE S4 119 S4 119  
+         
+         
+         

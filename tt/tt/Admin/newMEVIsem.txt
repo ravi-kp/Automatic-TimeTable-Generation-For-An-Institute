@@ -1,0 +1,16 @@
+Courese_No Course_Name Division Department Lec_Slot Lec_Venue Tut_Slot Tut_Venue Instructor 
+ Environmental_Studies  ME S14 23 S14 23  
+ Manufacturing_Processes_Lab  ME L1 Manufacturing_Lab L1 Manufacturing_Lab  
+ Heat_Transfer_Lab  ME L2 Heat_Transfer_Lab L2 Heat_Transfer_Lab  
+ KDOM_Lab  ME LX KDOM_Lab LX KDOM_Lab  
+ Elements_of_3D_Modeling  ME S2 211 S2 211  
+ Composite_Materials  ME S3 211 S3 211  
+ Theory_of_Elasticity  ME S4 115 S4 115  
+ Turbomachinery  ME S7 211 S7 211  
+ Applied_Thermodynamics  ME S1 215 S1 215  
+ Artificial_Neural_Networks_Deep_Learning  ME S13 203 S13 203  
+ classical_mechanics  ME S15 211 S15 211  
+ Machine_Design  ME S12 115 S12 115  
+         
+         
+         

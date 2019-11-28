@@ -1,0 +1,65 @@
+64
+Essential_biology 120 11 0 0 0 0 0 n 0 
+Computer_programming 120 11 0 0 0 0 0 n 0 
+Introduction_to_electrical_system 120 11 0 0 0 0 0 n 0 
+Linear_Algebra 120 11 0 0 0 0 0 n 0 
+Differential_Equation_I 120 11 0 0 0 0 0 n 0 
+Electricity_and_Magnetism 120 11 0 0 0 0 0 n 0 
+Introduction_to_electrical_system_Lab 40 11 0 0 0 0 0 y 0 D1 Micro_Electronics_Lab NULL NULL 
+Introduction_to_electrical_system_Lab 40 11 0 0 0 0 0 y 0 D2 Micro_Electronics_Lab NULL NULL 
+Introduction_to_electrical_system_Lab 40 11 0 0 0 0 0 y 0 D3 Micro_Electronics_Lab NULL NULL 
+Physics_Lab 40 11 0 0 0 0 0 y 0 D1 Physics_Lab NULL NULL 
+Physics_Lab 40 11 0 0 0 0 0 y 0 D2 Physics_Lab NULL NULL 
+Physics_Lab 40 11 0 0 0 0 0 y 0 D3 Physics_Lab NULL NULL 
+Essential_biology_Lab 40 11 0 0 0 0 0 y 0 D1 Chemistry_Lab NULL NULL 
+Essential_biology_Lab 40 11 0 0 0 0 0 y 0 D2 Chemistry_Lab NULL NULL 
+Essential_biology_Lab 40 11 0 0 0 0 0 y 0 D3 Chemistry_Lab NULL NULL 
+Computer_Programming_Lab 40 11 0 0 0 0 0 y 0 D1 Computer_Lab(Ground_Floor) Computer_LabII NULL 
+Computer_Programming_Lab 40 11 0 0 0 0 0 y 0 D2 Computer_Lab(Ground_Floor) Computer_LabII NULL 
+Computer_Programming_Lab 40 11 0 0 0 0 0 y 0 D3 Computer_Lab(Ground_Floor) Computer_LabII NULL 
+Fluid_Mechanics_II 50 0 13 0 0 0 0 n 0 
+Manufacturing_Process_I 50 0 13 0 0 0 0 n 0 
+Mechanics_of_Materials 50 0 13 0 0 0 0 n 0 
+Numerical-Analysis 40 0 13 0 0 0 0 n 0 
+Control_Systems 80 0 13 14 0 0 0 n 0 
+Intro_to_analog_ckt_&_probability 50 0 0 14 0 0 0 n 0 
+Intro_to_electrical_machine_power_electronics 50 0 0 14 0 0 0 n 0 
+electromagnetics_and_intro_to_power_system 50 0 0 14 0 0 0 n 0 
+Devices_and_Circuits_Lab 50 0 0 14 0 0 0 y 0 D1 Micro_Electronics_Lab NULL NULL 
+Digital_Systems 80 12 0 14 0 0 0 n 0 
+Digital_System_Lab 40 12 0 14 0 0 0 y 0 D1 Micro_Electronics_Lab NULL NULL 
+Digital_System_Lab 40 12 0 14 0 0 0 y 0 D2 Micro_Electronics_Lab NULL NULL 
+Design_and_Analysis_of_Algo 40 12 0 0 0 0 0 n 0 
+Computer_Network 40 12 0 0 0 0 0 n 0 
+Automata_Theory 40 12 0 0 0 0 0 n 0 
+Computer_Network_Lab 40 12 0 0 0 0 0 y 0 D1 Computer_Lab(Ground_Floor) Computer_LabII NULL 
+Applied_Thermodynamics 40 0 16 0 0 0 0 n 0 
+Machine_Design 40 0 16 0 0 0 0 n 0 
+Manufacturing_Processes_Lab 40 0 16 0 0 0 0 y 0 D1 Manufacturing_Lab NULL NULL 
+Heat_Transfer_Lab 40 0 16 0 0 0 0 y 0 D1 Heat_Transfer_Lab NULL NULL 
+KDOM_Lab 40 0 16 0 0 0 0 y 0 D1 KDOM_Lab NULL NULL 
+Operating_System 40 15 0 0 0 0 0 n 0 
+Software_Engineering 40 15 0 0 0 0 0 n 0 
+Artificial_Intelligence_Lab 40 15 0 0 0 0 0 y 0 D1 Computer_Lab(Ground_Floor) Computer_LabII NULL 
+Operating_System_Lab 40 15 0 0 0 0 0 y 0 D1 Computer_Lab(Ground_Floor) Computer_LabII NULL 
+Data_Analysis 40 0 0 17 0 0 0 n 0 
+Electronic_Devices 40 0 0 17 0 0 0 n 0 
+DSP_Lab 40 0 0 17 0 0 0 y 0 D1 DSP/PE_Lab NULL NULL 
+Electronics_Devices_Lab 40 0 0 17 0 0 0 y 0 D1 Micro_Electronics_Lab NULL NULL 
+Composite_Materials 40 0 16 0 0 19 0 n 0 
+Theory_of_Elasticity 40 0 16 0 0 19 0 n 0 
+Turbomachinery 40 0 16 0 0 19 0 n 0 
+Advanced_FEM 40 0 0 0 0 19 0 n 0 
+Compilers 40 15 0 0 18 0 0 n 0 
+Parameterized_Algo_and_Complexity 40 15 0 0 18 0 0 n 0 
+Statistical_Pattern_Recognition 50 15 0 17 18 0 20 n 0 
+information_theory 50 0 0 17 0 0 20 n 0 
+multivariable_control 50 0 0 17 0 0 20 n 0 
+speech_processing 50 0 0 17 0 0 20 n 0 
+Robotics 50 0 0 0 0 19 0 n 0   
+Environmental_Studies 50 15 16 17 0 0 0 n 1 S14 23 
+Control_System_Lab 80 0 13 14 0 0 0 y 0 D1 DSP/PE_Lab DSP/PE_Lab NULL 
+Elements_of_3D_Modeling 50 0 16 0 0 19 0 n 0
+Sustainable_energy_and_energy_matetials 40 0 0 0 18 19 20 n 0 
+Applied_Ethics 40 0 0 0 18 19 20 n 0
+Modernism_its_heroic 40 0 0 0 18 19 20 n 0

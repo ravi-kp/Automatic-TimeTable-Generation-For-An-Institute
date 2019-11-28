@@ -1,0 +1,12 @@
+Day 8:30-9:25 9:30-10:25 10:35-11:30 11:35-12:30 2:00-3:25 3:30-4:55 5:00-6:25 6:30-7:55
+
+Monday Statistical_Pattern_Recognition,119 information_theory,215 multivariable_control,22 speech_processing,21 ......... ......... Electronic_Devices,117:: Artificial_Neural_Networks_Deep_Learning,203::
+
+Tuesday speech_processing,21 Statistical_Pattern_Recognition,119 information_theory,215 multivariable_control,22 DSP_LabD1,DSP/PE_Lab:: DSP_LabD1,DSP/PE_Lab:: Environmental_Studies,23:: classical_mechanics,211::
+
+Wednesday ......... ......... ......... ......... ......... ......... ......... .........
+
+Thursday multivariable_control,22 speech_processing,21 Statistical_Pattern_Recognition,119 information_theory,215 ......... ......... Electronic_Devices,117:: Artificial_Neural_Networks_Deep_Learning,203::
+
+Friday ......... ......... ......... ......... ......... ......... Environmental_Studies,23:: classical_mechanics,211::
+

@@ -1,0 +1,11 @@
+Courese_No Course_Name Division Department Lec_Slot Lec_Venue Tut_Slot Tut_Venue Instructor 
+ Control_Systems  ME S2 119 S2 119  
+ Control_System_Lab  ME L1 DSP/PE_Lab L1 DSP/PE_Lab  
+ Manufacturing_Process_I  ME S1 21 S1 21  
+ Mechanics_of_Materials  ME S3 21 S3 21  
+ Fluid_Mechanics_II  ME S4 211 S4 211  
+ Numerical-Analysis  ME S7 210 S7 210  
+         
+         
+         
+         

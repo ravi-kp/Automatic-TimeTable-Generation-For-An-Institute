@@ -1,0 +1,19 @@
+Courese_No Course_Name Division Department Lec_Slot Lec_Venue Tut_Slot Tut_Venue Instructor 
+ Computer_programming  CSE S1 23 S1 23  
+ Introduction_to_electrical_system  CSE S2 23 S2 23  
+ Linear_Algebra  CSE S3 23 S3 23  
+ Differential_Equation_I  CSE S4 23 S4 23  
+ Electricity_and_Magnetism  CSE S7 23 S7 23  
+ Introduction_to_electrical_system_Lab  CSE L1 Micro_Electronics_Lab L1 Micro_Electronics_Lab  
+ Introduction_to_electrical_system_Lab  CSE L2 Micro_Electronics_Lab L2 Micro_Electronics_Lab  
+ Introduction_to_electrical_system_Lab  CSE LX Micro_Electronics_Lab LX Micro_Electronics_Lab  
+ Physics_Lab  CSE L2 Physics_Lab L2 Physics_Lab  
+ Physics_Lab  CSE L1 Physics_Lab L1 Physics_Lab  
+ Physics_Lab  CSE L3 Physics_Lab L3 Physics_Lab  
+ Essential_biology_Lab  CSE LX Chemistry_Lab LX Chemistry_Lab  
+ Essential_biology_Lab  CSE L3 Chemistry_Lab L3 Chemistry_Lab  
+ Essential_biology_Lab  CSE L1 Chemistry_Lab L1 Chemistry_Lab  
+ Computer_Programming_Lab  CSE L3 Computer_Lab(Ground_Floor) L3 Computer_Lab(Ground_Floor)  
+ Computer_Programming_Lab  CSE LX Computer_Lab(Ground_Floor) LX Computer_Lab(Ground_Floor)  
+ Computer_Programming_Lab  CSE L2 Computer_Lab(Ground_Floor) L2 Computer_Lab(Ground_Floor)  
+ Essential_biology  CSE S12 23 S12 23  

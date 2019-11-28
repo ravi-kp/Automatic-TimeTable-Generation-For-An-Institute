@@ -1,0 +1,9 @@
+Courese_No Course_Name Division Department Lec_Slot Lec_Venue Tut_Slot Tut_Venue Instructor 
+ Digital_Systems  EE S1 210 S1 210  
+ Control_Systems  EE S2 119 S2 119  
+ Control_System_Lab  EE L1 DSP/PE_Lab L1 DSP/PE_Lab  
+ Intro_to_analog_ckt_&_probability  EE S3 207 S3 207  
+ Intro_to_electrical_machine_power_electronics  EE S4 117 S4 117  
+ electromagnetics_and_intro_to_power_system  EE S7 21 S7 21  
+ Devices_and_Circuits_Lab  EE L4 Micro_Electronics_Lab L4 Micro_Electronics_Lab  
+ Digital_System_Lab  EE L5 Micro_Electronics_Lab L5 Micro_Electronics_Lab  

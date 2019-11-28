@@ -1,0 +1,68 @@
+56
+Chemistry                         50 1 0 0 n
+calculus                          50 1 0 0 n
+Quantum_Physics                   50 1 0 0 n
+Engineering_graphics              50 1 0 0 n
+chemistry_lab                     50 1 0 0 y
+Engineering_graphics_lab          50 1 0 0 y
+Engineering_lab                   50 1 0 0 y
+Economics                         80 2 3 4 n
+Data_Analysis                     80 2 3 4 n
+Data_structure_and_algo           50 2 0 0 n
+Discrete_structure                50 2 0 0 n
+Data_Structure_and_algo_lab       50 2 0 0 y
+Software_system_lab               50 2 0 0 y
+Engineering_mechanics             50 0 3 0 n
+Engineering_Materials             50 0 3 0 n
+Thermodynamics                    50 0 3 0 n
+Machine_drawing_lab               50 0 3 0 y
+Electronics_device                50 0 0 4 n
+Network_theory                    50 0 0 4 n
+Signal_and_system                 50 0 0 4 n
+Complex_analysis                  50 0 0 4 n
+Differential_equation_II          50 0 0 4 n
+Introduction_to_philosophy        80 5 6 7 n
+Computer_architecture             70 5 0 7 n
+Database_and_information_system   50 5 0 0 n
+Elementary_algebra                40 5 0 0 n
+Machine_learning                  40 5 8 10 n
+Graph_theory                      40 5 8 0 n
+Database_information_system_lab   50 5 0 0 y
+Digital_system_lab                70 5 0 7 y
+Computer_Architecture_lab         70 5 0 7 y
+Control_system                    70 0 6 7 n
+Heat_transfer                     50 0 6 0 n
+Kinematics_dynamics_of_machine    50 0 6 0 n
+Manufacturing_processes_II        50 0 6 0 n
+Control_system_lab                70 0 6 7 y
+Mechanical_measurement_lab        50 0 6 0 y
+Solid_mechanics_lab               50 0 6 0 y
+Power_system                      50 0 0 7 n
+Introduction_to_probability       60 0 0 7 n
+Analog_circuit_lab                50 0 0 7 y
+Power_electronics_lab             50 0 0 7 y  
+Distributed_System                50 8 8 0 n
+Reinforcement_learning            50 8 8 0 n
+Astrophysics_for_engineers        70 8 9 10 n
+Statistical_Mechanics             80 8 9 10 n
+Accounting_Financial_management   70 8 9 10 n
+Technoloical_entrepreneurship     70 8 9 10 n
+Finite_element_analysis           50 0 9 0 n
+Vibration_of_linear_system        50 0 9 0 n
+Introduction_to_combustion        50 0 9 0 n
+Manufacturing_Process_Lab         50 0 9 0 y
+Power_system_dynamic_and_control  50 0 0 10 n
+Wireless_communication            50 0 0 10 n
+VLSI_Design                       50 0 0 10 n
+Communication_Lab                 50 0 0 10 y
+       
+
+
+   
+                  
+
+ 
+
+
+
+

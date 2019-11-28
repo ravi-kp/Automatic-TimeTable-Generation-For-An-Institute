@@ -1,34 +1,15 @@
-S1 Monday 8:30
-S1 Tuesday 9:30
-S1 Thursday 10:35
-S2 Monday 9:30
-S2 Tuesday 10:25
-S2 Thursday 11:35
-S3 Monday 10:35
-S3 Tuesday 11:35
-S3 Thursday 8:30
-S4 Monday 11:35
-S4 Tuesday 8:30
-S4 Thursday 9:30
-S5 Wednesday 9:30
-S5 Friday 11:35
-S6 Wednesday 11:35
-S6 Friday 9:30
-S7 Wednesday 8:30
-S7 Friday 8:30
-S8 Monday 2:00
-S8 Thursday 2:00
-S9 Monday 3:30
-S9 Thursday 3:30
-S10 Tuesday 2:00
-S10 Friday 2:00
-S11 Monday 3:30
-S11 Friday 3:30
-S12 Monday 5:00
-S12 Thursday 5:00
-S13 Monday 6:30
-S13 Thursday 6:30
-S14 Tuesday 5:00
-S14 Friday 5:00
-S15 Tuesday 6:30
-S15 Friday 6:30
+S1 Monday Tuesday Thursday 8:30 9:30 10:35
+S2 Monday Tuesday Thursday 9:30 10:35 11:35
+S3 Monday Tuesday Thursday 10:35 11:35 8:30
+S4 Monday Tuesday Thursday 11:35 8:30 9:30
+S5 Wednesday Friday  9:30 11:35 
+S6 Wednesday Friday  11:35 9:30 
+S7 Wednesday Friday  8:30 8:30 
+S8 Monday Thursday  2:00 2:00 
+S9 Monday Thursday  3:30 3:30 
+S10 Tuesday Friday  2:00 2:00 
+S11 Tuesday Friday  3:30 3:30 
+S12 Monday Thursday  5:00 5:00 
+S13 Monday Thursday  6:30 6:30 
+S14 Tuesday Friday  5:00 5:00 
+S15 Tuesday Friday  6:30 6:30 
